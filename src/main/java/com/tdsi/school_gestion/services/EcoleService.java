@@ -30,4 +30,14 @@ public class EcoleService {
     public void delete(Long id){
         ecoleRepository.deleteById(id);
     }
+
+    public Ecole update(Long id, EcoleDTO ecoleDTO){
+        Optional<Ecole> ecole = ecoleRepository.findById(id);
+
+        ecole.get().setNomEcole(ecoleDTO.getNomEcole());
+        ecole.get().setAdresseEcole(ecoleDTO.getAdresseEcole());
+
+        return ecoleRepository.save(ecole.get());
+
+    }
 }
