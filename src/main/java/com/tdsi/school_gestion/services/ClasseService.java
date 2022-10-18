@@ -25,4 +25,15 @@ public class ClasseService {
         return classeRepository.save(classe);
     }
 
+    public Classe update(Long id,String newIndice){
+        Optional<Classe> classe = classeRepository.findById(id);
+        classe.get().setIndiceClasse(newIndice);
+
+        return classeRepository.save(classe.get());
+    }
+
+    public void delete(Long id){
+        classeRepository.deleteById(id);
+    }
+
 }

@@ -13,16 +13,16 @@ public class Parents {
    @Column(name = "id", nullable = false)
    private Long id;
 
-   @Column(name = "prenom_pere")
-   private String prenomPere;
+   @Column(name = "prenom", nullable = false)
+   private String prenom;
 
-   @Column(name = "prenom_mere")
-   private String prenomMere;
+   @Column(name = "nom", nullable = false)
+   private String nom;
 
    @Column(name = "email")
    private String email;
 
-   @Column(name = "tel_1")
+   @Column(name = "tel_1", nullable = false)
    private String tel1;
 
    @Column(name = "tel_2")

@@ -14,7 +14,7 @@ public class Niveau {
    @Column(name = "id", nullable = false)
    private Long id;
 
-   @Column(name = "nom_niveau")
+   @Column(name = "nom_niveau", nullable = false)
    private String nomNiveau;
 
    @Column(name = "description")
