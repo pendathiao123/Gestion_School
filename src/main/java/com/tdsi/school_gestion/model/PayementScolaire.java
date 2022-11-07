@@ -14,10 +14,10 @@ public class PayementScolaire {
    @Column(name = "id", nullable = false)
    private Long id;
 
-   @Column(name = "montant_payement")
+   @Column(name = "montant_payement", nullable = false)
    private Double montantPayement;
 
-   @Column(name = "date_payement")
+   @Column(name = "date_payement", nullable = false)
    private Date datePayement;
 
    @Column(name = "description")
