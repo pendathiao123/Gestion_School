@@ -14,10 +14,11 @@ public class SerieService {
         this.serieRepository = serieRepository;
     }
 
-    public Optional<Serie> findByCode(String code){
-        return serieRepository.findByCode(code);
-    }
+   // public Optional<Serie> findByCode(String code){
+       // return serieRepository.findByCodeSerie(code);
+    //}
 
+    public Optional<Serie> findById(Long id){return serieRepository.findById(id);}
     public Serie create(String code){
         Serie serie = new Serie();
         serie.setCode_serie(code);

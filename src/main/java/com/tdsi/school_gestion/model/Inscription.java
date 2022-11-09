@@ -29,14 +29,7 @@ public class Inscription {
    private Promotion promotion;
 
    @ManyToOne
-   @JoinColumn(name = "niveau")
-   private Niveau niveau;
+   @JoinColumn(name = "classe")
+   private Classe classe;
 
-   @ManyToOne
-   @JoinColumn(name = "serie")
-   private Serie serie;
-
-   @ManyToOne
-   @JoinColumn(name = "cycle")
-   private CycleScolaire cycleScolaire;
 }

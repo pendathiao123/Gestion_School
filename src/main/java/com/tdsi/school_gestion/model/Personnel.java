@@ -30,6 +30,6 @@ public class Personnel {
    private String email;
 
    @Column(name = "tel")
-   private Long tel;
+   private String tel;
 
 }

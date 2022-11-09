@@ -16,7 +16,7 @@ public class NiveauService {
         this.niveauRepository = niveauRepository;
     }
 
-    public Niveau creaye(NiveauDTO niveauDTO){
+    public Niveau create(NiveauDTO niveauDTO){
         Niveau niveau = new Niveau();
         niveau.setNomNiveau(niveauDTO.getNomNiveau());
         niveau.setDescription(niveauDTO.getDescription());
@@ -28,6 +28,7 @@ public class NiveauService {
         return niveauRepository.findByNomNiveau(nomNiveau);
     }
 
+    public Optional<Niveau> findById(Long id){return niveauRepository.findById(id);}
     public void delete(Long id){
         niveauRepository.deleteById(id);
     }

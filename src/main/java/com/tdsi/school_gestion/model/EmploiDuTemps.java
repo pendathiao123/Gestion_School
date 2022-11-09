@@ -17,4 +17,8 @@ public class EmploiDuTemps {
    @Column(name = "date")
    private Date date;
 
+   @ManyToOne
+   @JoinColumn(name = "cours")
+   private Cours cours;
+
 }

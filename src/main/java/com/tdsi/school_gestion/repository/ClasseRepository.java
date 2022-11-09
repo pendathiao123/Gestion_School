@@ -10,5 +10,5 @@ import java.util.Optional;
 
 @Repository
 public interface ClasseRepository extends JpaRepository<Classe, Long> {
-    Optional<Classe> findByIndice(String indice);
+    Optional<Classe> findByIndiceClasse(String indice);
 }

@@ -20,8 +20,7 @@ public class ParentService {
         parent.setPrenom(parentsDTO.getPrenom());
         parent.setNom(parentsDTO.getNom());
         parent.setEmail(parentsDTO.getEmail());
-        parent.setTel1(parentsDTO.getTel1());
-        parent.setTel2(parentsDTO.getTel2());
+        parent.setTel(parentsDTO.getTel());
         parent.setAdresse(parentsDTO.getAdresse());
 
         return parentsRepository.save(parent);
@@ -43,9 +42,7 @@ public class ParentService {
         parents.setEmail(parentsDTO.getEmail());
         parents.setPrenom(parentsDTO.getPrenom());
         parents.setNom(parentsDTO.getNom());
-        parents.setTel2(parentsDTO.getTel2());
-        parents.setTel1(parentsDTO.getTel1());
-
+        parents.setTel(parentsDTO.getTel());
         return parentsRepository.save(parents);
 
     }

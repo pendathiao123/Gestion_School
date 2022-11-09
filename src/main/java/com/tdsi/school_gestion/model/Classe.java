@@ -29,4 +29,9 @@ public class Classe {
    @JoinColumn(name = "niveau")
    private Niveau niveau;
 
+   @ManyToOne
+   @JoinColumn(name = "serie")
+   private Serie serie;
+
+
 }

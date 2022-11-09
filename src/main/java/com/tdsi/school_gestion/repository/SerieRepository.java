@@ -8,5 +8,5 @@ import java.util.Optional;
 
 @Repository
 public interface SerieRepository extends JpaRepository<Serie, Long> {
-    Optional<Serie> findByCode(String code);
+
 }

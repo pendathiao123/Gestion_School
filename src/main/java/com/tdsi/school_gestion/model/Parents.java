@@ -22,11 +22,8 @@ public class Parents {
    @Column(name = "email")
    private String email;
 
-   @Column(name = "tel_1", nullable = false)
-   private String tel1;
-
-   @Column(name = "tel_2")
-   private String tel2;
+   @Column(name = "tel", nullable = false)
+   private String tel;
 
    @Column(name = "adresse")
    private String adresse;

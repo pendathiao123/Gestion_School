@@ -7,7 +7,6 @@ public class ParentsDTO {
     private String prenom;
     private String nom;
     private String email;
-    private String tel1;
-    private String tel2;
+    private String tel;
     private String adresse;
 }

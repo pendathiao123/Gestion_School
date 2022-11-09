@@ -8,7 +8,7 @@ import java.util.*;
 
 @Data
 @Entity
-@Table(name = "")
+@Table(name = "salle_classe")
 public class SalleClasse extends Salle {
 
 }
